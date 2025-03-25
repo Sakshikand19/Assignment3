@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Results</title>
+    <link rel="stylesheet" href="C:\Users\BCASCI-\Documents\Assignment3/style.css">
+</head>
+<body>
+    <header>
+        <h1>Available Flights</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/login">Login</a>
+        </nav>
+    </header>
+    <main>
+        {% for flight in flights %}
+            <div class="flight">
+                <p>Mumabi to Dilhi on 11/02/2025 at 5pm</p>
+                <p>Price: 15000</p>
+                <a href="file:///C:/Users/BCASCI-/Documents/Assignment3/payment.html">Book Now</a>
+            </div>
+        {% endfor %}
+    </main>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Flights</title>
+    <link rel="stylesheet" href="C:\Users\BCASCI-\Documents\Assignment3/style.css">
+</head>
+<body>
+    <header>
+        <h1>Search Flights</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/login">Login</a>
+        </nav>
+    </header>
+    <main>
+        <form action="/search" method="POST">
+            <label for="departure">Departure City:</label>
+            <input type="text" id="departure" name="departure" required>
+            <label for="destination">Destination City:</label>
+            <input type="text" id="destination" name="destination" required>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            <button type="submit">Search Flights</button>
+        </form>
+    </main>
+</body>
+</html>
